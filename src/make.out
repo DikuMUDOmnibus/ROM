@@ -1,0 +1,39 @@
+rm *.o
+gcc -c -Wall -DSYSV -O -g   act_comm.c
+gcc -c -Wall -DSYSV -O -g   act_enter.c
+gcc -c -Wall -DSYSV -O -g   act_info.c
+gcc -c -Wall -DSYSV -O -g   act_move.c
+gcc -c -Wall -DSYSV -O -g   act_obj.c
+gcc -c -Wall -DSYSV -O -g   act_wiz.c
+gcc -c -Wall -DSYSV -O -g   alias.c
+gcc -c -Wall -DSYSV -O -g   ban.c
+gcc -c -Wall -DSYSV -O -g   comm.c
+gcc -c -Wall -DSYSV -O -g   const.c
+gcc -c -Wall -DSYSV -O -g   db.c
+gcc -c -Wall -DSYSV -O -g   db2.c
+gcc -c -Wall -DSYSV -O -g   effects.c
+gcc -c -Wall -DSYSV -O -g   fight.c
+gcc -c -Wall -DSYSV -O -g   flags.c
+gcc -c -Wall -DSYSV -O -g   handler.c
+gcc -c -Wall -DSYSV -O -g   healer.c
+gcc -c -Wall -DSYSV -O -g   interp.c
+gcc -c -Wall -DSYSV -O -g   note.c
+gcc -c -Wall -DSYSV -O -g   lookup.c
+gcc -c -Wall -DSYSV -O -g   magic.c
+gcc -c -Wall -DSYSV -O -g   magic2.c
+gcc -c -Wall -DSYSV -O -g   music.c
+gcc -c -Wall -DSYSV -O -g   recycle.c
+gcc -c -Wall -DSYSV -O -g   save.c
+gcc -c -Wall -DSYSV -O -g   scan.c
+gcc -c -Wall -DSYSV -O -g   skills.c
+gcc -c -Wall -DSYSV -O -g   special.c
+gcc -c -Wall -DSYSV -O -g   tables.c
+gcc -c -Wall -DSYSV -O -g   update.c
+gcc -c -Wall -DSYSV -O -g   string.c
+gcc -c -Wall -DSYSV -O -g   mem.c
+gcc -c -Wall -DSYSV -O -g   bit.c
+gcc -c -Wall -DSYSV -O -g   olc.c
+gcc -c -Wall -DSYSV -O -g   olc_act.c
+gcc -c -Wall -DSYSV -O -g   olc_save.c
+rm -f rom
+gcc -O -g  -liberty -lsocket -lnsl -o rom act_comm.o act_enter.o act_info.o act_move.o act_obj.o act_wiz.o alias.o ban.o comm.o const.o db.o db2.o effects.o fight.o flags.o handler.o healer.o interp.o note.o lookup.o magic.o magic2.o music.o recycle.o save.o scan.o skills.o special.o tables.o update.o string.o mem.o bit.o olc.o olc_act.o olc_save.o 

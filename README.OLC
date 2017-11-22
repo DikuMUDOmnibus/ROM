@@ -1,0 +1,15 @@
+    Using the romolc10.tar.gz file from ftp.game.org, this was put
+together to be able to read in stock areas and write new ones. The areas in
+the area directory have already been saved under the new format. If you
+wish to read the original area.lst and the original areas, once you asave 
+world for the first time you must move arachnos.are in the area.lst file above
+haon.are. Also you must remove the resets for the juke in immort.are and 
+shire.are.
+    I have changed the way resets were read, displayed and added from the
+original romolc10 release to closer resemble the stock reset system. I did
+not change or update any helpfiles in this release but I do have a version
+of hedit.c that creates and saves help information.
+    If you wish to contact me, my e-mail address is jhoward@loa.com. I
+would be more than happy to answer any questions you might have.
+
+Thanos
